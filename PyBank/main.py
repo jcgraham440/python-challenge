@@ -30,7 +30,7 @@ with open(csvpath, newline='') as csvfile:
     NetPL = 0
     currentProfit = 0
     for row in csvreader:
-        if (i > 1):
+        if (i > 0):
             # subtract the difference between this month and last month, 
             # and add it to the averageChange
             averageChange += (int(row[1]) - currentProfit)
